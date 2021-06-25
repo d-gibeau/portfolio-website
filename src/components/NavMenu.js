@@ -1,12 +1,29 @@
 import { Link } from "react-router-dom";
+import { Grid, Button } from "@material-ui/core";
+const SPACING = 3;
 
 const NavMenu = () => {
   return (
     <nav className="nav">
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/cv">CV</Link>
-      <Link to="/projects">Projects</Link>
+      <Grid
+        direction="row"
+        justify="center"
+        alignItems="center"
+        spacing={SPACING}
+      >
+        <Button component={Link} to="/" variant="contained">
+          Home
+        </Button>
+        <Button component={Link} to="/projects" variant="contained">
+          Projects
+        </Button>
+        <Button component={Link} to="/cv" variant="contained">
+          CV
+        </Button>
+        <Button component={Link} to="/about" variant="contained">
+          About
+        </Button>
+      </Grid>
     </nav>
   );
 };
