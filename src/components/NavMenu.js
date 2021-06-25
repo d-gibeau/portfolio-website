@@ -5,6 +5,8 @@ const NavMenu = () => {
     <nav className="nav">
       <Link to="/">Home</Link>
       <Link to="/about">About</Link>
+      <Link to="/cv">CV</Link>
+      <Link to="/projects">Projects</Link>
     </nav>
   );
 };
