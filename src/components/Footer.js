@@ -17,12 +17,20 @@ const Footer = () => {
         </Grid>
         &nbsp;
         <Grid item>
-          <a href="https://www.linkedin.com/in/daniel-gibeau-723a2b15a/">
+          <a
+            href="https://www.linkedin.com/in/daniel-gibeau-723a2b15a/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <LinkedIn />
           </a>
         </Grid>
         <Grid item>
-          <a href="https://github.com/Ututu222">
+          <a
+            href="https://github.com/Ututu222"
+            target="_blank"
+            rel="noreferrer"
+          >
             <GitHub />
           </a>
         </Grid>

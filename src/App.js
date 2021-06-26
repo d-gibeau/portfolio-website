@@ -5,20 +5,37 @@ import About from "./components/About";
 import Home from "./components/Home";
 import CurriculumVitae from "./components/CurriculumVitae";
 import Projects from "./components/Projects";
-import { Container } from "@material-ui/core";
+import { Container, createMuiTheme, MuiThemeProvider } from "@material-ui/core";
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#1a237e",
+      light: "#534bae",
+      dark: "#000051",
+    },
+    secondary: {
+      main: "#263238",
+      light: "#4f5b62",
+      dark: "#000a12",
+    },
+  },
+});
 
 function App() {
   return (
-    <Container maxWidth="xl">
-      <Router>
-        <Header />
-        <Route path="/" exact component={Home} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/cv" component={CurriculumVitae} />
-        <Route path="/about" component={About} />
-        <Footer />
-      </Router>
-    </Container>
+    <MuiThemeProvider theme={theme}>
+      <Container maxWidth="xl">
+        <Router>
+          <Header backgroundColor={theme.palette.primary.main} />
+          <Route path="/" exact component={Home} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/cv" component={CurriculumVitae} />
+          <Route path="/about" component={About} />
+          <Footer />
+        </Router>
+      </Container>
+    </MuiThemeProvider>
   );
 }
 
