@@ -1,23 +1,30 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Header from "./components/Header";
+import NavMenu from "./components/NavMenu";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Home from "./components/Home";
 import CurriculumVitae from "./components/CurriculumVitae";
 import Projects from "./components/Projects";
-import { Container, createMuiTheme, MuiThemeProvider } from "@material-ui/core";
+import { createMuiTheme, MuiThemeProvider } from "@material-ui/core";
+import "./style/css/global.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: "#1a237e",
-      light: "#534bae",
-      dark: "#000051",
+      main: "#283593",
+      light: "#5f5fc4",
+      dark: "#001064",
     },
     secondary: {
-      main: "#263238",
-      light: "#4f5b62",
-      dark: "#000a12",
+      main: "#b0bec5",
+      light: "#e2f1f8",
+      dark: "#808e95",
+    },
+  },
+  socialIcon: {
+    "&:hover": {
+      backgroundColor: "#e2f1f8 !important",
     },
   },
 });
@@ -25,16 +32,16 @@ const theme = createMuiTheme({
 function App() {
   return (
     <MuiThemeProvider theme={theme}>
-      <Container maxWidth="xl">
-        <Router>
-          <Header backgroundColor={theme.palette.primary.main} />
+      <Router>
+        <div className="wrapper">
+          <NavMenu />
           <Route path="/" exact component={Home} />
           <Route path="/projects" component={Projects} />
           <Route path="/cv" component={CurriculumVitae} />
           <Route path="/about" component={About} />
-          <Footer />
-        </Router>
-      </Container>
+        </div>
+        <Footer />
+      </Router>
     </MuiThemeProvider>
   );
 }

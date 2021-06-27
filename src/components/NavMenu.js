@@ -1,48 +1,31 @@
 import { Link } from "react-router-dom";
-import { Grid, Button } from "@material-ui/core";
-const SPACING = 1;
+import { Navbar, Nav } from "react-bootstrap";
+import Logo from "../img/selfie-min.png";
 
 const NavMenu = () => {
   return (
-    <nav className="nav">
-      <Grid container direction="row" justify="flex-end" spacing={SPACING}>
-        <Grid item>
-          <Button component={Link} to="/" variant="contained" color="secondary">
+    <Navbar bg="header" expand="lg" className="header">
+      <Navbar.Brand as={Link} to="/">
+        <img src={Logo} alt="logo" className="header-logo img-fluid" />
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" className="nav-toggle" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="ml-auto">
+          <Nav.Link as={Link} to="/" className="header-link">
             Home
-          </Button>
-        </Grid>
-        <Grid item>
-          <Button
-            component={Link}
-            to="/projects"
-            variant="contained"
-            color="secondary"
-          >
+          </Nav.Link>
+          <Nav.Link as={Link} to="/projects" className="header-link">
             Projects
-          </Button>
-        </Grid>
-        <Grid item>
-          <Button
-            component={Link}
-            to="/cv"
-            variant="contained"
-            color="secondary"
-          >
+          </Nav.Link>
+          <Nav.Link as={Link} to="/cv" className="header-link">
             CV
-          </Button>
-        </Grid>
-        <Grid item>
-          <Button
-            component={Link}
-            to="/about"
-            variant="contained"
-            color="secondary"
-          >
+          </Nav.Link>
+          <Nav.Link as={Link} to="/about" className="header-link">
             About
-          </Button>
-        </Grid>
-      </Grid>
-    </nav>
+          </Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 

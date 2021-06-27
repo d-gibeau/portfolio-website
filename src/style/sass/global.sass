@@ -1,0 +1,68 @@
+$primary-colour-main: #283593
+$primary-colour-light: #5f5fc4
+$primary-colour-dark: #001064
+
+$secondary-colour-main: #b0bec5
+$secondary-colour-light: #e2f1f8
+$secondary-colour-dark: #808e95
+
+$breakpoint-phone: 640px
+
+$header-padding-x: 2rem
+$header-padding-y: 1rem
+
+.header-logo
+  width: 3rem
+  height: 3rem
+
+.navbar-toggler
+  border-color: $secondary-colour-light !important
+
+.navbar-toggler-icon
+  background-image: url("../../img/hamburger.png") !important
+
+.header-link
+  color: $secondary-colour-main !important
+
+.header-link:hover
+  color: $secondary-colour-light !important
+
+.header
+  background-color: $primary-colour-main
+
+footer
+  background-color: $primary-colour-main
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.header, .footer
+  padding: $header-padding-y $header-padding-x
+
+.wrapper
+  min-height: 100%
+  position: relative
+
+footer
+  position: absolute
+  bottom: 0
+  left: 0
+  min-width: 100vw
+  color: #fff
+
+.footer
+  flex-direction: row-reverse
+  align-items: center
+
+.social-media-icon-box
+  display: inline-flex
+  font-size: calc(50 / 16 * 1rem)
+  border-radius: 50%
+
+.social-media-icon-box:hover
+  background-color: #e2f1f8
+  opacity: 90%
+
+@media (min-width: $breakpoint-phone)
+  .copyright
+    text-align: left
