@@ -46,8 +46,6 @@ footer
 
 footer
   position: relative
-  bottom: 0
-  left: 0
   min-width: 100%
   color: #fff
 
@@ -65,7 +63,7 @@ footer
   opacity: 90%
 
 .page-view
-  padding: 1rem
+  padding: 3rem
 
 .about-me-pic
   margin: 0 auto
@@ -74,12 +72,21 @@ footer
 
 h4
   text-align: center
+
+.project
+  text-align: center
+
+.active-link
+  color: $secondary-colour-light !important
   
 @media screen and (min-width: $breakpoint-phone)
   .copyright
     text-align: left
 
 @media screen and ( min-width: $bootstrap-breakpoint-lg )
-  
+  .project
+    text-align: left
+  .invert
+    flex-direction: row-reverse
   h4
     text-align: left

@@ -1,7 +1,6 @@
 const About = () => {
   return (
     <div className="page-view">
-      <h4>Version 1.0.0</h4>
       <div className="row">
         <div className="col-lg-3 d-flex">
           <img

@@ -41,8 +41,6 @@ footer {
 
 footer {
   position: relative;
-  bottom: 0;
-  left: 0;
   min-width: 100%;
   color: #fff;
 }
@@ -64,7 +62,7 @@ footer {
 }
 
 .page-view {
-  padding: 1rem;
+  padding: 3rem;
 }
 
 .about-me-pic {
@@ -77,12 +75,28 @@ h4 {
   text-align: center;
 }
 
+.project {
+  text-align: center;
+}
+
+.active-link {
+  color: #e2f1f8 !important;
+}
+
 @media screen and (min-width: 640px) {
   .copyright {
     text-align: left;
   }
 }
 @media screen and (min-width: 992px) {
+  .project {
+    text-align: left;
+  }
+
+  .invert {
+    flex-direction: row-reverse;
+  }
+
   h4 {
     text-align: left;
   }
