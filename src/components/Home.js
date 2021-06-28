@@ -1,14 +1,10 @@
 const Home = () => {
   return (
-    <div>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
+    <div className="page-view">
+      <p>
+        Welcome to my website! I'm a software developer currently based in
+        Edmonton, Alberta.
+      </p>
     </div>
   );
 };

@@ -35,15 +35,15 @@ footer {
 }
 
 .wrapper {
-  min-height: 100%;
+  min-height: 100vh;
   position: relative;
 }
 
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
-  min-width: 100vw;
+  min-width: 100%;
   color: #fff;
 }
 
@@ -63,8 +63,27 @@ footer {
   opacity: 90%;
 }
 
-@media (min-width: 640px) {
+.page-view {
+  padding: 1rem;
+}
+
+.about-me-pic {
+  margin: 0 auto;
+  height: 10rem;
+  width: 10rem;
+}
+
+h4 {
+  text-align: center;
+}
+
+@media screen and (min-width: 640px) {
   .copyright {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 992px) {
+  h4 {
     text-align: left;
   }
 }

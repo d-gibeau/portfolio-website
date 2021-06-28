@@ -7,6 +7,7 @@ $secondary-colour-light: #e2f1f8
 $secondary-colour-dark: #808e95
 
 $breakpoint-phone: 640px
+$bootstrap-breakpoint-lg: 992px
 
 $header-padding-x: 2rem
 $header-padding-y: 1rem
@@ -40,14 +41,14 @@ footer
   padding: $header-padding-y $header-padding-x
 
 .wrapper
-  min-height: 100%
+  min-height: 100vh
   position: relative
 
 footer
-  position: absolute
+  position: relative
   bottom: 0
   left: 0
-  min-width: 100vw
+  min-width: 100%
   color: #fff
 
 .footer
@@ -63,6 +64,22 @@ footer
   background-color: #e2f1f8
   opacity: 90%
 
-@media (min-width: $breakpoint-phone)
+.page-view
+  padding: 1rem
+
+.about-me-pic
+  margin: 0 auto
+  height: 10rem
+  width: 10rem
+
+h4
+  text-align: center
+  
+@media screen and (min-width: $breakpoint-phone)
   .copyright
+    text-align: left
+
+@media screen and ( min-width: $bootstrap-breakpoint-lg )
+  
+  h4
     text-align: left
