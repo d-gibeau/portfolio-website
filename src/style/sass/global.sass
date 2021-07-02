@@ -15,7 +15,7 @@ $header-padding-y: 1rem
 $page-view-padding-x: 6rem
 $page-view-padding-y: 3rem
 
-$project-margin-top: 2rem
+$project-margin-x-y: 2rem
 
 $header-logo-x-y: 3rem
 $about-me-pic-x-y: 15rem
@@ -73,6 +73,9 @@ footer
 
 .page-view
   padding: $page-view-padding-y $page-view-padding-x
+  .project
+    margin: $project-margin-x-y
+
 
 .about-me-pic
   height: $about-me-pic-x-y
@@ -81,15 +84,16 @@ footer
 h4
   text-align: center
 
-.project
-  text-align: center
-  margin-top: $project-margin-top
-
 .about-pic-wrap
   justify-content: center
 
 .active-link
   color: $secondary-colour-light !important
+
+.proj-img
+  height: 9rem
+  width: 16rem
+  margin-bottom: 2rem
   
 @media screen and (min-width: $breakpoint-phone)
   .copyright

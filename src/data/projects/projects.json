@@ -1,7 +1,7 @@
 {
   "website": {
-    "imgSrc": "./android-chrome-192x192.png",
-    "projDesc": "Lorem ipsum idum ownefoipfwqeioefwioj iwoqe fijoefw jioefwioqijoefqw jiefwjqi oijefowijoeqwfjiojiefwo pqjioefwijo",
-    "imgAlt": "example-project"
+    "imgSrc": "./website-project.png",
+    "projDesc": "This website is one of the projects I've worked on. It's built using React, Material-UI, and Bootstrap. There were a few different goals to making this website. One of the major ones was to help improve my frontend skills to become more of a fullstack developer. Another was to help build out my portfolio of work I could show people. The source code for the project is up on Github: https://github.com/Ututu222/portfolio-website.",
+    "imgAlt": "website-project"
   }
 }
