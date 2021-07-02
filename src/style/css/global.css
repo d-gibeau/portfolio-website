@@ -62,13 +62,12 @@ footer {
 }
 
 .page-view {
-  padding: 3rem;
+  padding: 3rem 6rem;
 }
 
 .about-me-pic {
-  margin: 0 auto;
-  height: 10rem;
-  width: 10rem;
+  height: 15rem;
+  width: 15rem;
 }
 
 h4 {
@@ -77,6 +76,11 @@ h4 {
 
 .project {
   text-align: center;
+  margin-top: 2rem;
+}
+
+.about-pic-wrap {
+  justify-content: center;
 }
 
 .active-link {
@@ -88,7 +92,7 @@ h4 {
     text-align: left;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .project {
     text-align: left;
   }
@@ -99,6 +103,10 @@ h4 {
 
   h4 {
     text-align: left;
+  }
+
+  .about-pic-wrap {
+    justify-content: left;
   }
 }
 

@@ -7,14 +7,23 @@ $secondary-colour-light: #e2f1f8
 $secondary-colour-dark: #808e95
 
 $breakpoint-phone: 640px
+$bootstrap-breakpoint-xl: 1200px
 $bootstrap-breakpoint-lg: 992px
-
 $header-padding-x: 2rem
 $header-padding-y: 1rem
 
+$page-view-padding-x: 6rem
+$page-view-padding-y: 3rem
+
+$project-margin-top: 2rem
+
+$header-logo-x-y: 3rem
+$about-me-pic-x-y: 15rem
+
+
 .header-logo
-  width: 3rem
-  height: 3rem
+  width: $header-logo-x-y
+  height: $header-logo-x-y
 
 .navbar-toggler
   border-color: $secondary-colour-light !important
@@ -59,22 +68,25 @@ footer
   border-radius: 50%
 
 .social-media-icon-box:hover
-  background-color: #e2f1f8
+  background-color: $secondary-colour-light
   opacity: 90%
 
 .page-view
-  padding: 3rem
+  padding: $page-view-padding-y $page-view-padding-x
 
 .about-me-pic
-  margin: 0 auto
-  height: 10rem
-  width: 10rem
+  height: $about-me-pic-x-y
+  width: $about-me-pic-x-y
 
 h4
   text-align: center
 
 .project
   text-align: center
+  margin-top: $project-margin-top
+
+.about-pic-wrap
+  justify-content: center
 
 .active-link
   color: $secondary-colour-light !important
@@ -83,10 +95,12 @@ h4
   .copyright
     text-align: left
 
-@media screen and ( min-width: $bootstrap-breakpoint-lg )
+@media screen and ( min-width: $bootstrap-breakpoint-xl )
   .project
     text-align: left
   .invert
     flex-direction: row-reverse
   h4
     text-align: left
+  .about-pic-wrap
+    justify-content: left

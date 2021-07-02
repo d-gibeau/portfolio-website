@@ -2,14 +2,14 @@ const About = () => {
   return (
     <div className="page-view">
       <div className="row">
-        <div className="col-lg-3 d-flex">
+        <div className="col-xl-3 d-flex about-pic-wrap">
           <img
             src="./android-chrome-192x192.png"
             className="about-me-pic"
             alt="daniel-gibeau-with-fidel"
           />
         </div>
-        <div className="col-lg-9">
+        <div className="col-xl-9">
           <h4>A Little About Me</h4>
           <p>
             I am an avid problem-solver and enjoy finding the most efficient

@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import NavMenu from "./components/NavMenu";
 import Footer from "./components/Footer";
-import About from "./components/About";
-import Home from "./components/Home";
-import CurriculumVitae from "./components/CurriculumVitae";
-import Projects from "./components/Projects";
+import About from "./components/pages/About";
+import Home from "./components/pages/Home";
+import CurriculumVitae from "./components/pages/CurriculumVitae";
+import Projects from "./components/pages/Projects";
 import { createMuiTheme, MuiThemeProvider } from "@material-ui/core";
 import "./style/css/global.css";
 import "bootstrap/dist/css/bootstrap.min.css";
