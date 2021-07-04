@@ -6,14 +6,16 @@ const Projects = () => {
     <div className="page-view">
       <Project
         imgSrc={PROJ_JSON.website.imgSrc}
+        projName={PROJ_JSON.website.projName}
         projDesc={PROJ_JSON.website.projDesc}
         imgAlt={PROJ_JSON.website.imgAlt}
         invert={false}
       />
       <Project
-        imgSrc={PROJ_JSON.website.imgSrc}
-        projDesc={PROJ_JSON.website.projDesc}
-        imgAlt={PROJ_JSON.website.imgAlt}
+        imgSrc={PROJ_JSON.apiAssessment.imgSrc}
+        projName={PROJ_JSON.apiAssessment.projName}
+        projDesc={PROJ_JSON.apiAssessment.projDesc}
+        imgAlt={PROJ_JSON.apiAssessment.imgAlt}
         invert={true}
       />
     </div>
