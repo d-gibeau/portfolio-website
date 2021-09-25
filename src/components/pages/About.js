@@ -28,6 +28,19 @@ const About = () => {
             tandem with a tight-knit team of passionate people. Remaining
             adaptable and open to new solutions/experiences is valuable to me.
           </p>
+          <p>
+            The dog in the picture is Fidel, he is a Havanese Silk Dog. He is an
+            old boy; he turned 13 in May of 2021. He still enjoys going for
+            walks and is very affectionate. He loves to cuddle. He also is the
+            world's best alarm dog, but worst guard dog.
+          </p>
+          <p>
+            Some of my hobbies include video games, cycling, and cooking. I also
+            enjoy taking Fidel on walks in the neighbourhood. Exploring the
+            beautiful River Valley on foot or on my bike is definitely a
+            highlight of my summers in Edmonton. I also enjoy cooking simple,
+            delicious meals for the people in my life when I have the time.
+          </p>
         </div>
       </div>
     </div>
