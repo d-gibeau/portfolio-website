@@ -1,0 +1,13 @@
+{
+  "languages": ["C#", "JavaScript", "Java", "HTML", "CSS", "Dart"],
+  "frameworks": ["React.js", "Jest", "Vue.js", "Bootstrap", ".NET Framework", "ASP.NET", "Flutter", "WPF", "WCF"],
+  "databases": ["MSSQL Server", "MongoDB", "Oracle"],
+  "skills": [
+    "Problem Solving",
+    "Communication",
+    "Teamwork",
+    "Time Management",
+    "Conceptual Thinking/Abstraction",
+    "Adaptability"
+  ]
+}

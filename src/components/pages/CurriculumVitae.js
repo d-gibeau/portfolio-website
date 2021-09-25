@@ -1,5 +1,6 @@
 import WorkExperience from "../WorkExperience.js";
-import WORK_EXP_JSON from "../../data/projects/work-exp.json";
+import WORK_EXP_JSON from "../../data/cv/work-exp.json";
+import SKILLS_JSON from "../../data/cv/skills.json";
 
 const CurriculumVitae = () => {
   return (
@@ -28,25 +29,28 @@ const CurriculumVitae = () => {
       <section className="cv-skills">
         <h4>Known Technologies</h4>
         <h5>Languages</h5>
-        <ul>
-          <li>C#, JavaScript, Java, HTML, CSS, Dart</li>
+        <ul className="cv-skills-list">
+          {SKILLS_JSON.languages.map((language, idx) => {
+            return <li key={`lang-${idx}`}>{language}</li>;
+          })}
         </ul>
         <h5>Frameworks</h5>
-        <ul>
-          <li>React.js, Jest, Vue.js, Bootstrap, .NET, Flutter, WPF, WCF</li>
+        <ul className="cv-skills-list">
+          {SKILLS_JSON.frameworks.map((framework, idx) => {
+            return <li key={`framework-${idx}`}>{framework}</li>;
+          })}
         </ul>
         <h5>Databases</h5>
-        <ul>
-          <li>MSSQL Server, MongoDB, Oracle</li>
+        <ul className="cv-skills-list">
+          {SKILLS_JSON.databases.map((database, idx) => {
+            return <li key={`db-${idx}`}>{database}</li>;
+          })}
         </ul>
-        <h4>Skills</h4>
-        <ul>
-          <li>Problem Solving</li>
-          <li>Communication</li>
-          <li>Teamwork</li>
-          <li>Time Management</li>
-          <li>Conceptual Thinking/Abstraction</li>
-          <li>Adaptability</li>
+        <h5>Skills</h5>
+        <ul className="cv-skills-list">
+          {SKILLS_JSON.skills.map((skill, idx) => {
+            return <li key={`skill-${idx}`}>{skill}</li>;
+          })}
         </ul>
       </section>
       <section className="cv-work-exp">
