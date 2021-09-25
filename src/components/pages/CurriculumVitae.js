@@ -1,3 +1,6 @@
+import WorkExperience from "../WorkExperience.js";
+import WORK_EXP_JSON from "../../data/projects/work-exp.json";
+
 const CurriculumVitae = () => {
   return (
     <div className="page-view">
@@ -49,136 +52,44 @@ const CurriculumVitae = () => {
       <section className="cv-work-exp">
         <h4 className="cv-work-exp-h">Work Experience</h4>
         <section className="cv-work-exp-dev">
-          <div className="cv-work-exp-item">
-            <h5>RMS Welding Systems - Tech</h5>
-            <p>
-              <span className="soft-text">Nisku, AB</span>
-            </p>
-            <p>
-              <span className="soft-text">June 2021 - Current</span>
-            </p>
-            <ul>
-              <li>Refactoring code written in C#, WPF and WCF frameworks</li>
-              <li>
-                Updating and writing documnetation on how current software
-                functions
-              </li>
-            </ul>
-          </div>
-          <div className="cv-work-exp-item">
-            <h5>Capstone Project - Software Developer</h5>
-            <p>
-              <span className="soft-text">Edmonton, AB</span>
-            </p>
-            <p>
-              <span className="soft-text">September 2020 - December 2020</span>
-            </p>
-            <ul>
-              <li>
-                Developed MVP web application using MEVN stack using Agile-like
-                methodology
-              </li>
-              <li>
-                Helped implement one-page website using Vue.js views and router
-              </li>
-              <li>
-                Integral in development of proof-of-concept for user
-                authentication
-              </li>
-              <li>
-                Recognized by peers for clean, efficient, maintainable code
-              </li>
-              <li>
-                Strong advocate and contributor to unit/integration testing
-                using Jest framework
-              </li>
-            </ul>
-          </div>
+          <WorkExperience
+            title={WORK_EXP_JSON.rms.title}
+            company={WORK_EXP_JSON.rms.company}
+            startDate={WORK_EXP_JSON.rms.startDate}
+            endDate={WORK_EXP_JSON.rms.endDate}
+            descriptors={WORK_EXP_JSON.rms.descriptors}
+          />
+          <WorkExperience
+            title={WORK_EXP_JSON.capstone.title}
+            company={WORK_EXP_JSON.capstone.company}
+            startDate={WORK_EXP_JSON.capstone.startDate}
+            endDate={WORK_EXP_JSON.capstone.endDate}
+            descriptors={WORK_EXP_JSON.capstone.descriptors}
+          />
         </section>
         <section className="cv-work-exp-culinary">
-          <div className="cv-work-exp-item">
-            <h5>White Spot - Line Cook</h5>
-            <p>
-              <span className="soft-text">Surrey, BC</span>
-            </p>
-            <p>
-              <span className="soft-text">April 2017 - January 2018</span>
-            </p>
-            <ul>
-              <li>
-                Stocked appropriate amounts of product, prepared orders in a
-                timely manner following set plating standards and guidelines on
-                all workstations (flattop, salad, grill/saute, dessert/fries)
-              </li>
-              <li>Maintained clean work environment throughout shifts</li>
-              <li>
-                Multi-tasked to finish extra dinner service objectives (e.g.
-                clean hood vents, check stock levels, receive orders etc.)
-                during service
-              </li>
-              <li>
-                Trained new staff on multiple stations, made them feel welcome
-                and part of the team
-              </li>
-            </ul>
-          </div>
-          <div className="cv-work-exp-item">
-            <h5>DeDutch Pannekoek House - Line/Prep Cook</h5>
-            <p>
-              <span className="soft-text">Surrey, BC</span>
-            </p>
-            <p>
-              <span className="soft-text">February 2017 - May 2018</span>
-            </p>
-            <ul>
-              <li>
-                Cooked breakfast food to order on flattop grill, including
-                variable doneness of eggs
-              </li>
-              <li>
-                Monitored stock levels of product, prep as needed throughout the
-                day
-              </li>
-              <li>Maintained clean workspace throughout shift</li>
-              <li>
-                Operated independently as only back-of-house staff on weekdays,
-                as a team member on weekends
-              </li>
-            </ul>
-          </div>
+          <WorkExperience
+            title={WORK_EXP_JSON.whiteSpot.title}
+            company={WORK_EXP_JSON.whiteSpot.company}
+            startDate={WORK_EXP_JSON.whiteSpot.startDate}
+            endDate={WORK_EXP_JSON.whiteSpot.endDate}
+            descriptors={WORK_EXP_JSON.whiteSpot.descriptors}
+          />
+          <WorkExperience
+            title={WORK_EXP_JSON.deDutch.title}
+            company={WORK_EXP_JSON.deDutch.company}
+            startDate={WORK_EXP_JSON.deDutch.startDate}
+            endDate={WORK_EXP_JSON.deDutch.endDate}
+            descriptors={WORK_EXP_JSON.deDutch.descriptors}
+          />
+          <WorkExperience
+            title={WORK_EXP_JSON.vivo.title}
+            company={WORK_EXP_JSON.vivo.company}
+            startDate={WORK_EXP_JSON.vivo.startDate}
+            endDate={WORK_EXP_JSON.vivo.endDate}
+            descriptors={WORK_EXP_JSON.vivo.descriptors}
+          />
         </section>
-        <div className="cv-work-exp-item">
-          <h5>vivo Ristorante - Dishwasher/Line Cook</h5>
-          <p>
-            <span className="soft-text">Edmonton, AB</span>
-          </p>
-          <p>
-            <span className="soft-text">September 2011 - May 2016</span>
-          </p>
-          <ul>
-            <li>
-              Competency with all workstations (grill, forno, saute, salad)
-            </li>
-            <li>
-              Detailed dish area and open kitchen, and maintained a clean
-              workspace throughout shift
-            </li>
-            <li>
-              Managed multiple tasks to meet variable deadlines consistently
-            </li>
-            <li>
-              Met and exceeded stringent presentation and quality standards
-            </li>
-            <li>
-              Followed proper rotation of ingredients, exacting in measurements
-              for recipes to minimize food costs
-            </li>
-            <li>
-              Helped train new staff in various areas of the kitchen, and
-              provided them a warm welcome to the team
-            </li>
-          </ul>
-        </div>
       </section>
       <section className="cv-edu">
         <h4>Education</h4>

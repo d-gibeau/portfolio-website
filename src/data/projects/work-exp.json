@@ -1,0 +1,68 @@
+{
+  "rms": {
+    "company": "RMS Welding Systems",
+    "title": "Tech",
+    "location": "Nisku, AB",
+    "startDate": "June 2021",
+    "endDate": "Current",
+    "descriptors": [
+      "Refactoring code written in C#, WPF and WCF frameworks",
+      "Updating and writing documnetation on how current software functions"
+    ]
+  },
+  "capstone": {
+    "company": "Capstone Project",
+    "title": "Software Developer",
+    "location": "Edmonton, AB",
+    "startDate": "September 2020",
+    "endDate": "December 2020",
+    "descriptors": [
+      "Developed MVP web application using MEVN stack using Agile-like methodology",
+      "Helped implement one-page website using Vue.js views and router",
+      "Integral in development of proof-of-concept for userauthentication",
+      "Recognized by peers for clean, efficient, maintainable code",
+      "Strong advocate and contributor to unit/integration testing using Jest framework"
+    ]
+  },
+  "whiteSpot": {
+    "company": "White Spot",
+    "title": "Line Cook",
+    "location": "Surrey, BC",
+    "startDate": "April 2017",
+    "endDate": "January 2018",
+    "descriptors": [
+      "Stocked appropriate amounts of product, prepared orders in a timely manner following set plating standards and guidelines on all workstations (flattop, salad, grill/saute, dessert/fries)",
+      "Maintained clean work environment throughout shifts",
+      "Multi-tasked to finish extra dinner service objectives (e.g. clean hood vents, check stock levels, receive orders etc.) during service",
+      "Trained new staff on multiple stations, made them feel welcome and part of the team"
+    ]
+  },
+  "deDutch": {
+    "company": "DeDutch Pannekoek House",
+    "title": "Line/Prep Cook",
+    "location": "Surrey, BC",
+    "startDate": "February 2017",
+    "endDate": "May 2018",
+    "descriptors": [
+      "Cooked breakfast food to order on flattop grill, including variable doneness of eggs",
+      "Monitored stock levels of product, prep as needed throughout the day",
+      "Maintained clean workspace throughout shift",
+      "Operated independently as only back-of-house staff on weekdays, as a team member on weekends"
+    ]
+  },
+  "vivo": {
+    "company": "vivo Ristorante",
+    "title": "Dishwasher/Line Cook",
+    "location": "Edmonton, AB",
+    "startDate": "September 2011",
+    "endDate": "May 2016",
+    "descriptors": [
+      "Competency with all workstations (grill, forno, saute, salad)",
+      "Detailed dish area and open kitchen, and maintained a clean workspace throughout shift",
+      "Managed multiple tasks to meet variable deadlines consistently",
+      "Met and exceeded stringent presentation and quality standards",
+      "Followed proper rotation of ingredients, exacting in measurements for recipes to minimize food costs",
+      "Helped train new staff in various areas of the kitchen, and provided them a warm welcome to the team"
+    ]
+  }
+}
