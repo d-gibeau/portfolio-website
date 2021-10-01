@@ -6,54 +6,56 @@ const CurriculumVitae = () => {
   return (
     <div className="page-view">
       <div className="cv">
-        <section className="cv-personal-info">
-          <h3>Daniel Gibeau</h3>
-          <p>Edmonton, AB</p>
-          <p>
-            <a href="mailto:dgibeau@gmail.com">dgibeau@gmail.com</a>
-          </p>
-          <ul>
-            <li>
-              Experienced using object-oriented-programming, utilizes best
-              practices for software development flows and lifecycles
-            </li>
-            <li>
-              Excellent communication skills, extremely adaptable to changing
-              deadlines, rapidly learns new technologies and frameworks
-            </li>
-            <li>
-              Proven experience troubleshooting and debugging problems in code,
-              enjoys finding the most efficient solution
-            </li>
-          </ul>
-        </section>
-        <section className="cv-skills">
-          <h4>Known Technologies</h4>
-          <h5>Languages</h5>
-          <ul className="cv-skills-list">
-            {SKILLS_JSON.languages.map((language, idx) => {
-              return <li key={`lang-${idx}`}>{language}</li>;
-            })}
-          </ul>
-          <h5>Frameworks</h5>
-          <ul className="cv-skills-list">
-            {SKILLS_JSON.frameworks.map((framework, idx) => {
-              return <li key={`framework-${idx}`}>{framework}</li>;
-            })}
-          </ul>
-          <h5>Databases</h5>
-          <ul className="cv-skills-list">
-            {SKILLS_JSON.databases.map((database, idx) => {
-              return <li key={`db-${idx}`}>{database}</li>;
-            })}
-          </ul>
-          <h5>Skills</h5>
-          <ul className="cv-skills-list">
-            {SKILLS_JSON.skills.map((skill, idx) => {
-              return <li key={`skill-${idx}`}>{skill}</li>;
-            })}
-          </ul>
-        </section>
+        <div className="row">
+          <section className="cv-personal-info col-xl-3">
+            <h3>Daniel Gibeau</h3>
+            <p>Edmonton, AB</p>
+            <p>
+              <a href="mailto:dgibeau@gmail.com">dgibeau@gmail.com</a>
+            </p>
+            <ul>
+              <li>
+                Experienced using object-oriented-programming, utilizes best
+                practices for software development flows and lifecycles
+              </li>
+              <li>
+                Excellent communication skills, extremely adaptable to changing
+                deadlines, rapidly learns new technologies and frameworks
+              </li>
+              <li>
+                Proven experience troubleshooting and debugging problems in
+                code, enjoys finding the most efficient solution
+              </li>
+            </ul>
+          </section>
+          <section className="cv-skills col-xl-9">
+            <h4>Known Technologies</h4>
+            <h5>Languages</h5>
+            <ul className="cv-skills-list">
+              {SKILLS_JSON.languages.map((language, idx) => {
+                return <li key={`lang-${idx}`}>{language}</li>;
+              })}
+            </ul>
+            <h5>Frameworks</h5>
+            <ul className="cv-skills-list">
+              {SKILLS_JSON.frameworks.map((framework, idx) => {
+                return <li key={`framework-${idx}`}>{framework}</li>;
+              })}
+            </ul>
+            <h5>Databases</h5>
+            <ul className="cv-skills-list">
+              {SKILLS_JSON.databases.map((database, idx) => {
+                return <li key={`db-${idx}`}>{database}</li>;
+              })}
+            </ul>
+            <h5>Skills</h5>
+            <ul className="cv-skills-list">
+              {SKILLS_JSON.skills.map((skill, idx) => {
+                return <li key={`skill-${idx}`}>{skill}</li>;
+              })}
+            </ul>
+          </section>
+        </div>
         <section className="cv-work-exp">
           <h4 className="cv-work-exp-h">Work Experience</h4>
           <section className="cv-work-exp-dev">

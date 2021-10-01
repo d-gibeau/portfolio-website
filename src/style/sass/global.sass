@@ -111,6 +111,7 @@ img
   width: 100%
   height: 100%
   object-fit: contain
+  overflow: hidden
 
 .cv-skills-list
   display: flex
@@ -133,9 +134,10 @@ img
       margin: .25rem
 
 @media screen and ( min-width: $bootstrap-breakpoint-md )
-  .cv
-    padding-left: 16%
-    padding-right: 16%
+  .page-view
+    padding: 3rem 16%
+  .about-text
+    padding: 0 16%
 
 @media screen and ( min-width: $breakpoint-phone )
   .copyright
@@ -147,14 +149,11 @@ img
   .invert
     flex-direction: row-reverse
   .cv
-    h3, h4, h5
-      text-align: left
+    text-align: left
+    .cv-skills-list
+      justify-content: left
   .about-pic-wrap
     justify-content: left
-  .cv-skills-list
-    justify-content: left
-  .page-view
-    padding: 3rem 6rem
   .active-link
     background: none
   .about-text

@@ -108,6 +108,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  overflow: hidden;
 }
 
 .cv-skills-list {
@@ -137,9 +138,12 @@ img {
 }
 
 @media screen and (min-width: 740px) {
-  .cv {
-    padding-left: 16%;
-    padding-right: 16%;
+  .page-view {
+    padding: 3rem 16%;
+  }
+
+  .about-text {
+    padding: 0 16%;
   }
 }
 @media screen and (min-width: 640px) {
@@ -156,20 +160,15 @@ img {
     flex-direction: row-reverse;
   }
 
-  .cv h3, .cv h4, .cv h5 {
+  .cv {
     text-align: left;
+  }
+  .cv .cv-skills-list {
+    justify-content: left;
   }
 
   .about-pic-wrap {
     justify-content: left;
-  }
-
-  .cv-skills-list {
-    justify-content: left;
-  }
-
-  .page-view {
-    padding: 3rem 6rem;
   }
 
   .active-link {
