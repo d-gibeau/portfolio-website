@@ -9,6 +9,8 @@ $secondary-colour-dark: #808e95
 $breakpoint-phone: 640px
 $bootstrap-breakpoint-xl: 1200px
 $bootstrap-breakpoint-lg: 992px
+$bootstrap-breakpoint-md: 740px
+$bootstrap-breakpoint-sm: 576px
 $header-padding-x: 2rem
 $header-padding-y: 1rem
 
@@ -20,12 +22,23 @@ $project-margin-x-y: 2rem
 $header-logo-x-y: 3rem
 $about-me-pic-x-y: 15rem
 
+.page-view
+  text-align: center
+
 .header-logo
   width: $header-logo-x-y
   height: $header-logo-x-y
 
 .navbar-toggler
   border-color: $secondary-colour-light !important
+
+.navbar-nav
+  align-items: center
+  .nav-link
+    width: 75%
+    text-align: center
+    padding-left: 2rem
+    padding-right: 2rem
 
 .navbar-toggler-icon
   background-image: url("../../img/hamburger.png") !important
@@ -71,7 +84,6 @@ footer
   opacity: 90%
 
 .page-view
-  padding: $page-view-padding-y $page-view-padding-x
   .project
     margin: $project-margin-x-y
 
@@ -79,19 +91,26 @@ footer
   height: $about-me-pic-x-y
   width: $about-me-pic-x-y
 
-h4
-  text-align: center
-
 .about-pic-wrap
   justify-content: center
 
+.about-text
+  padding-bottom: 1rem
+
 .active-link
   color: $secondary-colour-light !important
+  background: $primary-colour-dark
+  border-radius: 1rem
 
 .proj-img
   height: 9rem
   width: 16rem
   margin-bottom: 2rem
+
+img
+  width: 100%
+  height: 100%
+  object-fit: contain
 
 .cv-skills-list
   display: flex
@@ -99,16 +118,44 @@ h4
   gap: 0 2rem
   flex-wrap: wrap
 
-@media screen and (min-width: $breakpoint-phone)
+.cv
+  padding: 1rem
+  ul
+    list-style-type: square
+    padding: 0rem
+    li
+      margin: 1rem
+  .cv-skills-list
+    display: flex
+    justify-content: center
+    padding: 0 1rem
+    li
+      margin: .25rem
+
+@media screen and ( min-width: $bootstrap-breakpoint-md )
+  .cv
+    padding-left: 16%
+    padding-right: 16%
+
+@media screen and ( min-width: $breakpoint-phone )
   .copyright
     text-align: left
 
-@media screen and ( min-width: $bootstrap-breakpoint-xl )
+@media screen and ( min-width: $bootstrap-breakpoint-lg )
   .project
     text-align: left
   .invert
     flex-direction: row-reverse
-  h4
-    text-align: left
+  .cv
+    h3, h4, h5
+      text-align: left
   .about-pic-wrap
     justify-content: left
+  .cv-skills-list
+    justify-content: left
+  .page-view
+    padding: 3rem 6rem
+  .active-link
+    background: none
+  .about-text
+    text-align: left
