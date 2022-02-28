@@ -1,10 +1,21 @@
 {
+  "tps": {
+    "company": "Truck Parts Solutions",
+    "title": "Junior Web Developer",
+    "location": "Sherwood Park, AB",
+    "startDate": "October 2021",
+    "endDate": "December 2021",
+    "descriptors": [
+      "Debugged the main website and reviewed changes to the code",
+      "Helped implement/write documentation using Confluence"
+    ]
+  },
   "rms": {
     "company": "RMS Welding Systems",
     "title": "Tech",
     "location": "Nisku, AB",
     "startDate": "June 2021",
-    "endDate": "Current",
+    "endDate": "October 2021",
     "descriptors": [
       "Refactoring code written in C#, WPF and WCF frameworks",
       "Updating and writing documnetation on how current software functions"
