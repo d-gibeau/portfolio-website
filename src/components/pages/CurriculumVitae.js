@@ -59,43 +59,30 @@ const CurriculumVitae = () => {
         <section className="cv-work-exp">
           <h4 className="cv-work-exp-h">Work Experience</h4>
           <section className="cv-work-exp-dev">
-            <WorkExperience
-              title={WORK_EXP_JSON.rms.title}
-              company={WORK_EXP_JSON.rms.company}
-              startDate={WORK_EXP_JSON.rms.startDate}
-              endDate={WORK_EXP_JSON.rms.endDate}
-              descriptors={WORK_EXP_JSON.rms.descriptors}
-            />
-            <WorkExperience
-              title={WORK_EXP_JSON.capstone.title}
-              company={WORK_EXP_JSON.capstone.company}
-              startDate={WORK_EXP_JSON.capstone.startDate}
-              endDate={WORK_EXP_JSON.capstone.endDate}
-              descriptors={WORK_EXP_JSON.capstone.descriptors}
-            />
+            {WORK_EXP_JSON.dev.map(function (experience, idx) {
+              return (
+                <WorkExperience
+                  title={experience.title}
+                  company={experience.company}
+                  startDate={experience.startDate}
+                  endDate={experience.endDate}
+                  descriptors={experience.descriptors}
+                />
+              );
+            })}
           </section>
           <section className="cv-work-exp-culinary">
-            <WorkExperience
-              title={WORK_EXP_JSON.whiteSpot.title}
-              company={WORK_EXP_JSON.whiteSpot.company}
-              startDate={WORK_EXP_JSON.whiteSpot.startDate}
-              endDate={WORK_EXP_JSON.whiteSpot.endDate}
-              descriptors={WORK_EXP_JSON.whiteSpot.descriptors}
-            />
-            <WorkExperience
-              title={WORK_EXP_JSON.deDutch.title}
-              company={WORK_EXP_JSON.deDutch.company}
-              startDate={WORK_EXP_JSON.deDutch.startDate}
-              endDate={WORK_EXP_JSON.deDutch.endDate}
-              descriptors={WORK_EXP_JSON.deDutch.descriptors}
-            />
-            <WorkExperience
-              title={WORK_EXP_JSON.vivo.title}
-              company={WORK_EXP_JSON.vivo.company}
-              startDate={WORK_EXP_JSON.vivo.startDate}
-              endDate={WORK_EXP_JSON.vivo.endDate}
-              descriptors={WORK_EXP_JSON.vivo.descriptors}
-            />
+            {WORK_EXP_JSON.other.map(function (experience, idx) {
+              return (
+                <WorkExperience
+                  title={experience.title}
+                  company={experience.company}
+                  startDate={experience.startDate}
+                  endDate={experience.endDate}
+                  descriptors={experience.descriptors}
+                />
+              );
+            })}
           </section>
         </section>
         <section className="cv-edu">
