@@ -1,3 +1,7 @@
+# Porfolio Website
+
+I started this project to help me learn more React, play with some deployment, and show some of my abilities as a software developer. I'm leaving the boilerplate readme text here for reference and transparency.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -6,7 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm start`, `npm run serve`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -28,6 +32,10 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run build-style`
+
+Shortcut for the Sass 'watch' command, which compiles the .sass files in the style folder to .css files.
 
 ### `npm run eject`
 
