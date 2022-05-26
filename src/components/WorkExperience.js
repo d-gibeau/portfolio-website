@@ -1,7 +1,7 @@
 const WorkExperience = ({
   company,
   title,
-  location,
+  place,
   startDate,
   endDate,
   descriptors,
@@ -12,19 +12,20 @@ const WorkExperience = ({
   }
 
   return (
-    <div className="cv-work-exp-item">
-      <h5>
-        {company} - {title}
-      </h5>
-      <p>
-        <span className="soft-text">{location}</span>
-      </p>
-      <p>
-        <span className="soft-text">
+    <div className="cv-work-exp-item card m-2">
+      <div className="card-header">
+        <h5 className="mt-1">
+          <span className="font-weight-bold">{company}</span>
+          <br /> {title}
+        </h5>
+      </div>
+      <div className="card-body">
+        <p className="card-subtitle font-italic">{place}</p>
+        <p className="text-muted">
           {startDate} - {endDate}
-        </span>
-      </p>
-      <ul>{listItems}</ul>
+        </p>
+        <ul>{listItems}</ul>
+      </div>
     </div>
   );
 };

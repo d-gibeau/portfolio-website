@@ -3,7 +3,7 @@
     {
       "company": "Truck Parts Solutions",
       "title": "Junior Web Developer",
-      "location": "Sherwood Park, AB",
+      "place": "Sherwood Park, AB",
       "startDate": "October 2021",
       "endDate": "December 2021",
       "descriptors": [
@@ -14,7 +14,7 @@
     {
       "company": "RMS Welding Systems",
       "title": "Tech",
-      "location": "Nisku, AB",
+      "place": "Nisku, AB",
       "startDate": "June 2021",
       "endDate": "October 2021",
       "descriptors": [
@@ -25,7 +25,7 @@
     {
       "company": "Capstone Project",
       "title": "Software Developer",
-      "location": "Edmonton, AB",
+      "place": "Edmonton, AB",
       "startDate": "September 2020",
       "endDate": "December 2020",
       "descriptors": [
@@ -41,7 +41,7 @@
     {
       "company": "White Spot",
       "title": "Line Cook",
-      "location": "Surrey, BC",
+      "place": "Surrey, BC",
       "startDate": "April 2017",
       "endDate": "January 2018",
       "descriptors": [
@@ -54,7 +54,7 @@
     {
       "company": "DeDutch Pannekoek House",
       "title": "Line/Prep Cook",
-      "location": "Surrey, BC",
+      "place": "Surrey, BC",
       "startDate": "February 2017",
       "endDate": "May 2018",
       "descriptors": [
@@ -67,7 +67,7 @@
     {
       "company": "vivo Ristorante",
       "title": "Dishwasher/Line Cook",
-      "location": "Edmonton, AB",
+      "place": "Edmonton, AB",
       "startDate": "September 2011",
       "endDate": "May 2016",
       "descriptors": [
