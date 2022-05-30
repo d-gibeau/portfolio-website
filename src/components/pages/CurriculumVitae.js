@@ -29,96 +29,50 @@ const CurriculumVitae = () => {
             <h4>Known Technologies</h4>
             <h5>Languages</h5>
             <ul className="cv-skills-list">
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-                  alt="C#"
-                  className="language-icon"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                  alt="JavaScript"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"
-                  alt="Java"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
-                  alt="HTML 5"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
-                  alt="CSS 3"
-                />
-              </li>
+              {SKILLS_JSON.languages.map((language, idx) => {
+                return (
+                  <li key={idx}>
+                    <img
+                      src={language.src}
+                      alt={language.alt}
+                      className="language-icon"
+                    />
+                  </li>
+                );
+              })}
             </ul>
             <h5>Frameworks</h5>
             <ul className="cv-skills-list">
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
-                  alt="React.js"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"
-                  alt="Jest"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg"
-                  alt="Vue.js"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg"
-                  alt="Bootstrap"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original-wordmark.svg"
-                  alt=".NET"
-                />
-              </li>
+              {SKILLS_JSON.frameworks.map((framework, idx) => {
+                return (
+                  <li key={idx}>
+                    <img
+                      src={framework.src}
+                      alt={framework.alt}
+                      className="framework-icon"
+                    />
+                  </li>
+                );
+              })}
             </ul>
             <h5>Databases</h5>
             <ul className="cv-skills-list">
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg"
-                  alt="Microsoft SQL Server"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
-                  alt="MongoDB"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
-                  alt="Oracle"
-                />
-              </li>
+              {SKILLS_JSON.databases.map((database, idx) => {
+                return (
+                  <li key={idx}>
+                    <img
+                      src={database.src}
+                      alt={database.alt}
+                      className="database-icon"
+                    />
+                  </li>
+                );
+              })}
             </ul>
             <h5>Skills</h5>
             <ul className="cv-skills-list">
               {SKILLS_JSON.skills.map((skill, idx) => {
-                return <li key={`skill-${idx}`}>{skill}</li>;
+                return <li key={idx}>{skill}</li>;
               })}
             </ul>
           </section>
@@ -135,6 +89,7 @@ const CurriculumVitae = () => {
                   startDate={experience.startDate}
                   endDate={experience.endDate}
                   descriptors={experience.descriptors}
+                  key={idx}
                 />
               );
             })}
@@ -149,6 +104,7 @@ const CurriculumVitae = () => {
                   startDate={experience.startDate}
                   endDate={experience.endDate}
                   descriptors={experience.descriptors}
+                  key={idx}
                 />
               );
             })}

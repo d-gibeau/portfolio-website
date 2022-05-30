@@ -13,7 +13,7 @@ const WorkExperience = ({
 
   return (
     <div className="cv-work-exp-item card m-2">
-      <div className="card-header">
+      <div className="card-header work-exp-header">
         <h5 className="mt-1">
           <span className="font-weight-bold">{company}</span>
           <br /> {title}

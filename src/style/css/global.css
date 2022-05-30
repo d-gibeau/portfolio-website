@@ -1,3 +1,14 @@
+h1,
+h2 {
+  color: #283593;
+}
+
+h3,
+h4,
+h5 {
+  color: #001064;
+}
+
 .page-view {
   text-align: center;
 }
@@ -137,11 +148,19 @@ img {
   padding: 0 1rem;
 }
 .cv .cv-skills-list li {
-  margin: 0.25rem;
+  margin: 0.33rem;
 }
 .cv .cv-skills-list li img {
   width: auto;
   height: 3rem;
+}
+
+.work-exp-header {
+  background-color: #5f5fc4 !important;
+}
+.work-exp-header h4,
+.work-exp-header h5 {
+  color: #e2f1f8;
 }
 
 @media screen and (min-width: 740px) {

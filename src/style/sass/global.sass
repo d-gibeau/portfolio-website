@@ -22,6 +22,15 @@ $project-margin-x-y: 2rem
 $header-logo-x-y: 3rem
 $about-me-pic-x-y: 15rem
 
+h1,
+h2
+  color: $primary-colour-main
+
+h3,
+h4,
+h5
+  color: $primary-colour-dark
+
 .page-view
   text-align: center
 
@@ -134,10 +143,16 @@ img
     justify-content: center
     padding: 0 1rem
     li
-      margin: .25rem
+      margin: .33rem
       img
         width: auto
         height: 3rem
+
+.work-exp-header
+  background-color: $primary-colour-light !important
+  h4,
+  h5
+    color: $secondary-colour-light
 
 @media screen and ( min-width: $bootstrap-breakpoint-md )
   .page-view
