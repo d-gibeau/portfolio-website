@@ -1,8 +1,22 @@
 import WorkExperience from "../WorkExperience.js";
 import WORK_EXP_JSON from "../../data/cv/work-exp.json";
 import SKILLS_JSON from "../../data/cv/skills.json";
+import { useEffect } from "react";
 
 const CurriculumVitae = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+
+    script.src =
+      "https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js";
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="page-view">
       <div className="cv">
@@ -36,6 +50,9 @@ const CurriculumVitae = () => {
                       src={language.src}
                       alt={language.alt}
                       className="language-icon"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title={language.alt}
                     />
                   </li>
                 );
@@ -50,6 +67,9 @@ const CurriculumVitae = () => {
                       src={framework.src}
                       alt={framework.alt}
                       className="framework-icon"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title={framework.alt}
                     />
                   </li>
                 );
@@ -64,6 +84,9 @@ const CurriculumVitae = () => {
                       src={database.src}
                       alt={database.alt}
                       className="database-icon"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title={database.alt}
                     />
                   </li>
                 );
