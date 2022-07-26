@@ -6,6 +6,13 @@ $secondary-colour-main: #b0bec5
 $secondary-colour-light: #e2f1f8
 $secondary-colour-dark: #808e95
 
+$dark-blue: #264653
+$darker-blue: #1d353f
+$dark-green: #2a9d8f
+$yellow: #e9c46a
+$orange: #f4a261
+$dark-orange: #e76f51
+
 $breakpoint-phone: 640px
 $bootstrap-breakpoint-xl: 1200px
 $bootstrap-breakpoint-lg: 992px
@@ -24,22 +31,27 @@ $about-me-pic-x-y: 15rem
 
 h1,
 h2
-  color: $primary-colour-main
+  color: $dark-orange
 
 h3,
 h4,
 h5
-  color: $primary-colour-dark
+  color: $dark-orange
 
 .page-view
   text-align: center
+  color: $orange
+
+.wrapper
+  background-color: $dark-blue
 
 .header-logo
   width: $header-logo-x-y
   height: $header-logo-x-y
+  border-radius: 5px
 
 .navbar-toggler
-  border-color: $secondary-colour-light !important
+  border-color: $darker-blue !important
 
 .navbar-nav
   align-items: center
@@ -53,16 +65,16 @@ h5
   background-image: url("../../img/hamburger.png") !important
 
 .header-link
-  color: $secondary-colour-main !important
+  color: $darker-blue !important
 
 .header-link:hover
-  color: $secondary-colour-light !important
+  color: $dark-orange !important
 
 .header
-  background-color: $primary-colour-main
+  background-color: $yellow
 
 footer
-  background-color: $primary-colour-main
+  background-color: $yellow
   display: flex
   justify-content: space-between
   align-items: center
@@ -89,7 +101,7 @@ footer
   border-radius: 50%
 
 .social-media-icon-box:hover
-  background-color: $secondary-colour-light
+  background-color: $dark-orange
   opacity: 90%
 
 .page-view
@@ -107,8 +119,8 @@ footer
   padding-bottom: 1rem
 
 .active-link
-  color: $secondary-colour-light !important
-  background: $primary-colour-dark
+  color: $dark-orange !important
+  background: $darker-blue
   border-radius: 1rem
 
 .proj-img
@@ -149,10 +161,16 @@ img
         height: 3rem
 
 .work-exp-header
-  background-color: $primary-colour-light !important
+  background-color: $yellow !important
   h4,
   h5
-    color: $secondary-colour-light
+    color: $darker-blue
+
+.card-body
+  background-color: $darker-blue
+
+.copyright
+  color: $darker-blue
 
 @media screen and ( min-width: $bootstrap-breakpoint-md )
   .page-view
@@ -164,7 +182,7 @@ img
       ul
         list-style: square
 
-@media screen and ( min-width: $breakpoint-phone )
+@media screen and ( min-width: $bootstrap-breakpoint-sm )
   .copyright
     text-align: left
 
@@ -183,3 +201,14 @@ img
     background: none
   .about-text
     text-align: left
+
+@media screen and ( min-width: $bootstrap-breakpoint-xl ) and ( min-height: $bootstrap-breakpoint-md )
+  .about-me,
+  .home-content,
+  .projects-view
+    margin: 0
+    position: absolute
+    top: 50%
+    left: 50%
+    -ms-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)

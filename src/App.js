@@ -12,9 +12,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: "#283593",
-      light: "#5f5fc4",
-      dark: "#001064",
+      main: "#264653",
+      dark: "#1d353f",
     },
     secondary: {
       main: "#b0bec5",

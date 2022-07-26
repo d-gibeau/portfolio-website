@@ -1,25 +1,31 @@
 h1,
 h2 {
-  color: #283593;
+  color: #e76f51;
 }
 
 h3,
 h4,
 h5 {
-  color: #001064;
+  color: #e76f51;
 }
 
 .page-view {
   text-align: center;
+  color: #f4a261;
+}
+
+.wrapper {
+  background-color: #264653;
 }
 
 .header-logo {
   width: 3rem;
   height: 3rem;
+  border-radius: 5px;
 }
 
 .navbar-toggler {
-  border-color: #e2f1f8 !important;
+  border-color: #1d353f !important;
 }
 
 .navbar-nav {
@@ -37,19 +43,19 @@ h5 {
 }
 
 .header-link {
-  color: #b0bec5 !important;
+  color: #1d353f !important;
 }
 
 .header-link:hover {
-  color: #e2f1f8 !important;
+  color: #e76f51 !important;
 }
 
 .header {
-  background-color: #283593;
+  background-color: #e9c46a;
 }
 
 footer {
-  background-color: #283593;
+  background-color: #e9c46a;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,7 +88,7 @@ footer {
 }
 
 .social-media-icon-box:hover {
-  background-color: #e2f1f8;
+  background-color: #e76f51;
   opacity: 90%;
 }
 
@@ -104,8 +110,8 @@ footer {
 }
 
 .active-link {
-  color: #e2f1f8 !important;
-  background: #001064;
+  color: #e76f51 !important;
+  background: #1d353f;
   border-radius: 1rem;
 }
 
@@ -156,11 +162,19 @@ img {
 }
 
 .work-exp-header {
-  background-color: #5f5fc4 !important;
+  background-color: #e9c46a !important;
 }
 .work-exp-header h4,
 .work-exp-header h5 {
-  color: #e2f1f8;
+  color: #1d353f;
+}
+
+.card-body {
+  background-color: #1d353f;
+}
+
+.copyright {
+  color: #1d353f;
 }
 
 @media screen and (min-width: 740px) {
@@ -176,7 +190,7 @@ img {
     list-style: square;
   }
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 576px) {
   .copyright {
     text-align: left;
   }
@@ -207,6 +221,18 @@ img {
 
   .about-text {
     text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) and (min-height: 740px) {
+  .about-me,
+.home-content,
+.projects-view {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
 

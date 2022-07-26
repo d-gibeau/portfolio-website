@@ -15,7 +15,7 @@ const Footer = () => {
             className="social-media-icon-box"
           >
             <LinkedIn
-              htmlColor={theme.palette.primary.light}
+              htmlColor={theme.palette.primary.dark}
               fontSize="inherit"
               className="p-2"
             />
@@ -27,7 +27,7 @@ const Footer = () => {
             className="social-media-icon-box ml-2"
           >
             <GitHub
-              htmlColor={theme.palette.primary.light}
+              htmlColor={theme.palette.primary.dark}
               fontSize="inherit"
               className="p-2"
             />
