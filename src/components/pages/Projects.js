@@ -1,5 +1,7 @@
 import Project from "../Project";
 import PROJ_JSON from "../../data/projects/projects.json";
+import websitePicture from "../../img/website-project.png";
+import apiPicture from "../../img/API-assessment.jpg";
 
 const Projects = () => {
   return (
@@ -8,7 +10,7 @@ const Projects = () => {
         {PROJ_JSON.projects.map((project, idx) => {
           return (
             <Project
-              imgSrc={project.imgSrc}
+              imgSrc={idx === 0 ? websitePicture : apiPicture}
               projName={project.projName}
               projDesc={project.projDesc}
               imgAlt={project.imgAlt}

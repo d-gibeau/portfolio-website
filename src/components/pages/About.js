@@ -1,3 +1,5 @@
+import aboutPic from "../../img/fidel-selfie-min.JPG";
+
 const About = () => {
   return (
     <div className="page-view">
@@ -5,7 +7,7 @@ const About = () => {
         <div className="row px-3">
           <div className="col-lg-3 col-md-12 col-sm-12 d-flex about-pic-wrap align-items-middle">
             <img
-              src="./android-chrome-192x192.png"
+              src={aboutPic}
               className="about-me-pic rounded-circle"
               alt="daniel-gibeau-with-fidel"
             />
