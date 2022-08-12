@@ -7,7 +7,7 @@
       "imgAlt": "website-project-screenshot"
     },
     {
-      "imgSrc": "./api-assessment.png",
+      "imgSrc": "./api-assessment.jpg",
       "projName": "Basic API Assessment",
       "projDesc": "Less of a personal project and more of a skills assessment. As part of filtering through candidates for a Junior Developer position, they had a timed coding project. We were evaluated on several different metrics, including performance, correctness, organization, quality, and speed. I used Express.js/Node.js to complete the assessment, with Jest, Supertest, and FetchMock to implement some integration testing. Per their request, I have not included the source code nor the assessment specifications.",
       "imgAlt": "API-assessment-screenshot"

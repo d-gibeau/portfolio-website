@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
-import Logo from "../img/selfie-min.jpg";
+import Logo from "../img/logo.png";
 
 const NavMenu = () => {
   return (

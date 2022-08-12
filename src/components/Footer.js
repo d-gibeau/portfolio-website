@@ -1,8 +1,10 @@
 import { Grid, useTheme } from "@material-ui/core";
 import { GitHub, LinkedIn } from "@material-ui/icons";
+import { getAllByPlaceholderText } from "@testing-library/react";
 
 const Footer = () => {
   const theme = useTheme();
+  const date = new Date();
 
   return (
     <footer>
@@ -34,7 +36,9 @@ const Footer = () => {
           </a>
         </Grid>
         <Grid item xs={12} sm={6} className="copyright" align="center">
-          <p className="mb-0">Copyright Daniel Gibeau &copy; 2021</p>
+          <p className="mb-0">
+            Copyright Daniel Gibeau &copy; {date.getFullYear()}
+          </p>
         </Grid>
       </Grid>
     </footer>
