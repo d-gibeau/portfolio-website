@@ -1,6 +1,5 @@
 import { Grid, useTheme } from "@material-ui/core";
 import { GitHub, LinkedIn } from "@material-ui/icons";
-import { getAllByPlaceholderText } from "@testing-library/react";
 
 const Footer = () => {
   const theme = useTheme();
