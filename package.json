@@ -19,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "serve": "react-scripts start",
-    "build": "react-scripts build",
+    "prod": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build-style": "sass --watch ./src/style/sass/global.sass ./src/style/css/global.css"
