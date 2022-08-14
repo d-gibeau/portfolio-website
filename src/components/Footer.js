@@ -22,7 +22,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://github.com/Ututu222"
+            href="https://github.com/d-gibeau"
             target="_blank"
             rel="noreferrer"
             className="social-media-icon-box ml-2"
