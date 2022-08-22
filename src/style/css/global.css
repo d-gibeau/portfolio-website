@@ -124,7 +124,8 @@ footer {
 img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   overflow: hidden;
 }
 
@@ -177,6 +178,21 @@ img {
   color: #1d353f;
 }
 
+.feedback-form input,
+.feedback-form textarea {
+  margin: 0.3rem;
+  border-radius: 10px;
+}
+
+.feedback-form input {
+  height: 2rem;
+}
+
+.feedback-form textarea {
+  height: 6rem;
+  resize: none;
+}
+
 @media screen and (min-width: 740px) {
   .page-view {
     padding: 3rem 16%;
@@ -222,9 +238,6 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-}
-
-/*# sourceMappingURL=global.css.map */
+}/*# sourceMappingURL=global.css.map */
