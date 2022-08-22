@@ -3,6 +3,7 @@ import NavMenu from "./components/NavMenu";
 import Footer from "./components/Footer";
 import About from "./components/pages/About";
 import Home from "./components/pages/Home";
+import Feedback from "./components/pages/Feedback";
 import CurriculumVitae from "./components/pages/CurriculumVitae";
 import Projects from "./components/pages/Projects";
 import { createMuiTheme, MuiThemeProvider } from "@material-ui/core";
@@ -38,6 +39,7 @@ function App() {
           <Route path="/projects" component={Projects} />
           <Route path="/cv" component={CurriculumVitae} />
           <Route path="/about" component={About} />
+          <Route path="/feedback" component={Feedback} />
         </div>
         <Footer />
       </Router>

@@ -83,7 +83,7 @@ footer {
 
 .social-media-icon-box {
   display: inline-flex;
-  font-size: calc(50 / 16 * 1rem);
+  font-size: 3.125rem;
   border-radius: 50%;
 }
 
@@ -181,11 +181,9 @@ img {
   .page-view {
     padding: 3rem 16%;
   }
-
   .about-text {
     padding: 0 16%;
   }
-
   .cv .cv-personal-info ul {
     list-style: square;
   }
@@ -199,34 +197,27 @@ img {
   .project {
     text-align: left;
   }
-
   .invert {
     flex-direction: row-reverse;
   }
-
   .cv {
     text-align: left;
   }
   .cv .cv-skills-list {
     justify-content: left;
   }
-
   .about-pic-wrap {
     justify-content: left;
   }
-
   .active-link {
     background: none;
   }
-
   .about-text {
     text-align: left;
   }
 }
 @media screen and (min-width: 1200px) and (min-height: 740px) {
-  .about-me,
-.home-content,
-.projects-view {
+  .home-content {
     margin: 0;
     position: absolute;
     top: 50%;

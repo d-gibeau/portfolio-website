@@ -1,4 +1,4 @@
-import aboutPic from "../../img/fidel-selfie-min.JPG";
+import aboutPic from "../../img/fidel-selfie-min.jpg";
 
 const About = () => {
   return (
