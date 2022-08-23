@@ -6,7 +6,7 @@ const Feedback = () => {
   const [renderForm, setRenderForm] = useState(true);
 
   return (
-    <div>
+    <div className="page-view">
       {renderForm ? (
         <FeedbackForm unmount={setRenderForm} />
       ) : (
