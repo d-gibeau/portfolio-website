@@ -1,5 +1,5 @@
 const FeedbackSubmitted = () => {
-  return <p>Thank you for submitting your feedback!</p>;
+  return <p>Message sent!</p>;
 };
 
 export default FeedbackSubmitted;
