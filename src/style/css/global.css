@@ -178,10 +178,16 @@ img {
   color: #1d353f;
 }
 
+.feedback-form {
+  text-align: left;
+}
 .feedback-form input,
 .feedback-form textarea {
-  margin: 0.3rem;
   border-radius: 10px;
+}
+.feedback-form .form-title,
+.feedback-form .submit-button {
+  text-align: center;
 }
 
 .feedback-form input {

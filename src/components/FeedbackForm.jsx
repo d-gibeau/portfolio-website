@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const FeedbackForm = (props) => {
-  const API_URL = "";
+  const API_URL = "https://localhost:7282/api/feedback";
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -46,47 +46,73 @@ const FeedbackForm = (props) => {
     <div className="d-flex justify-content-center">
       <div className="col-md-8 col-lg-6">
         <form
-          className="d-flex flex-column p-3 feedback-form"
+          className="d-flex flex-column pt-3 feedback-form"
           onSubmit={onSubmitAction}
         >
-          <h2 className="form-title">Contact Form</h2>
-          <input
-            type="text"
-            placeholder="First Name"
-            name="firstName"
-            value={firstName}
-            onChange={(event) => {
-              setFirstName(event.target.value);
-            }}
-          />
-          <input
-            type="text"
-            placeholder="Last Name"
-            value={lastName}
-            name="lastName"
-            onChange={(event) => {
-              setLastName(event.target.value);
-            }}
-          />
-          <input
-            type="text"
-            placeholder="Email"
-            value={email}
-            name="email"
-            onChange={(event) => {
-              setEmail(event.target.value);
-            }}
-          />
-          <textarea
-            type="text"
-            placeholder="Message goes here"
-            value={feedback}
-            name="message"
-            onChange={(event) => {
-              setFeedback(event.target.value);
-            }}
-          />
-          <input type="submit" value="Submit" />
+          <h2 className="form-title mb-3">Contact Form</h2>
+          <div className="form-row">
+            <div className="form-group col-md-6">
+              <label for="firstName">First Name</label>
+              <input
+                type="text"
+                placeholder="First Name"
+                name="firstName"
+                id="firstName"
+                className="form-control"
+                value={firstName}
+                onChange={(event) => {
+                  setFirstName(event.target.value);
+                }}
+              />
+            </div>
+            <div className="form-group col-md-6">
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                placeholder="Last Name"
+                name="lastName"
+                id="lastName"
+                className="form-control"
+                value={lastName}
+                onChange={(event) => {
+                  setLastName(event.target.value);
+                }}
+              />
+            </div>
+          </div>
+          <div className="form-group">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              placeholder="Email"
+              name="email"
+              id="email"
+              className="form-control"
+              value={email}
+              onChange={(event) => {
+                setEmail(event.target.value);
+              }}
+            />
+          </div>
+          <div className="form-group">
+            <label for="message">Message</label>
+            <textarea
+              type="text"
+              placeholder="Message goes here"
+              name="message"
+              id="message"
+              className="form-control"
+              value={feedback}
+              onChange={(event) => {
+                setFeedback(event.target.value);
+              }}
+            />
+          </div>
+          <div className="form-group submit-button">
+            <button type="submit" className="btn btn-primary">
+              Submit
+            </button>
+          </div>
         </form>
       </div>
     </div>

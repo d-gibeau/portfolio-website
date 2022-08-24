@@ -172,19 +172,21 @@ img
 .copyright
   color: $darker-blue
 
-.feedback-form input,
-.feedback-form textarea
-  margin: .3rem
-  border-radius: 10px
+.feedback-form
+  text-align: left
+  input,
+  textarea
+    border-radius: 10px
+  .form-title,
+  .submit-button
+    text-align: center
 
 .feedback-form input
   height: 2rem
-  
+
 .feedback-form textarea
   height: 6rem
   resize: none
-
-  
 
 @media screen and ( min-width: $bootstrap-breakpoint-md )
   .page-view
