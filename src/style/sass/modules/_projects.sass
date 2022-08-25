@@ -1,0 +1,16 @@
+@use '../global'
+
+.page-view
+    .project
+        padding: global.$project-padding-x-y
+
+.proj-img
+    height: 9rem
+    width: 16rem
+    margin-bottom: 2rem
+
+@media screen and ( min-width: global.$bootstrap-breakpoint-lg )
+    .project
+        text-align: left
+    .invert
+        flex-direction: row-reverse

@@ -4,11 +4,11 @@ const Home = () => {
   return (
     <div className="page-view">
       <div className="home-content p-3 text-center container">
-        <div className="d-flex justify-content-center">
-          <div className="row col-4">
+        <div className="d-flex justify-content-center col-12">
+          <div className="row col-lg-4 home-pic-wrapper">
             <img
               src={pictureOfDaniel}
-              alt="Picture of Daniel Gibeau"
+              alt="Daniel Gibeau"
               className="img-fluid home-pic"
             />
           </div>

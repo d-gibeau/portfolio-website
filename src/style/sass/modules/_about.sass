@@ -1,0 +1,21 @@
+@use '../global'
+
+.about-me-pic
+    height: global.$about-me-pic-x-y
+    width: global.$about-me-pic-x-y
+
+.about-pic-wrap
+    justify-content: center
+
+.about-text
+    padding-bottom: 1rem
+
+@media screen and ( min-width: global.$bootstrap-breakpoint-md )
+    .about-text
+        padding: 0 16%
+
+@media screen and ( min-width: global.$bootstrap-breakpoint-lg )
+    .about-pic-wrap
+        justify-content: left
+    .about-text
+        text-align: left

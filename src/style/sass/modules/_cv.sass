@@ -1,0 +1,48 @@
+@use '../global'
+
+.cv-skills-list
+    display: flex
+    justify-content: center
+    gap: 1rem 2rem
+    flex-wrap: wrap
+
+.cv
+    padding: 1rem
+ul
+    list-style-type: none
+    padding: 0rem
+    li
+        margin: 1rem
+.cv-personal-info
+    ul
+        list-style: none
+.cv-skills-list
+    display: flex
+    justify-content: center
+    padding: 0 1rem
+    li
+        margin: .33rem
+    img
+        width: auto
+        height: 3rem
+    h4,
+    h5
+        color: global.$darker-blue
+
+.work-exp-header
+    background-color: global.$yellow !important
+
+.card-body
+    background-color: global.$darker-blue
+
+@media screen and ( min-width: global.$bootstrap-breakpoint-md )
+    .cv
+        .cv-personal-info
+            ul
+                list-style: square
+
+@media screen and ( min-width: global.$bootstrap-breakpoint-lg )
+    .cv
+        text-align: left
+        .cv-skills-list
+            justify-content: left

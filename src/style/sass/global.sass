@@ -1,11 +1,3 @@
-$primary-colour-main: #283593
-$primary-colour-light: #5f5fc4
-$primary-colour-dark: #001064
-
-$secondary-colour-main: #b0bec5
-$secondary-colour-light: #e2f1f8
-$secondary-colour-dark: #808e95
-
 $dark-blue: #264653
 $darker-blue: #1d353f
 $dark-green: #2a9d8f
@@ -31,204 +23,102 @@ $about-me-pic-x-y: 15rem
 
 h1,
 h2
-  color: $dark-orange
+    color: $dark-orange
 
 h3,
 h4,
 h5
-  color: $dark-orange
+    color: $dark-orange
 
 .page-view
-  text-align: center
-  color: $orange
+    text-align: center
+    color: $orange
 
 .wrapper
-  background-color: $dark-blue
+    background-color: $dark-blue
 
 .header-logo
-  width: $header-logo-x-y
-  height: $header-logo-x-y
-  border-radius: 5px
+    width: $header-logo-x-y
+    height: $header-logo-x-y
+    border-radius: 5px
 
 .navbar-toggler
-  border: none !important
+    border: none !important
 
 .navbar-nav
-  align-items: center
-  .nav-link
+    align-items: center
+
+.nav-link
     width: 75%
     text-align: center
     padding-left: 2rem
     padding-right: 2rem
 
 .navbar-toggler-icon
-  background-image: url("../../img/hamburger.svg") !important
+    background-image: url("../../img/hamburger.svg") !important
 
 .header-link
-  color: $darker-blue !important
+    color: $darker-blue !important
 
 .header-link:hover
-  color: $dark-orange !important
+    color: $dark-orange !important
 
 .header
-  background-color: $yellow
+    background-color: $yellow
 
 footer
-  background-color: $yellow
-  display: flex
-  justify-content: space-between
-  align-items: center
+    background-color: $yellow
+    display: flex
+    justify-content: space-between
+    align-items: center
 
 .header, .footer
-  padding: $header-padding-y $header-padding-x
+    padding: $header-padding-y $header-padding-x
 
 .wrapper
-  min-height: 100vh
-  position: relative
+    min-height: 100vh
+    position: relative
 
 footer
-  position: relative
-  min-width: 100%
-  color: #fff
+    position: relative
+    min-width: 100%
+    color: #fff
 
 .footer
-  flex-direction: row-reverse
-  align-items: center
+    flex-direction: row-reverse
+    align-items: center
 
 .social-media-icon-box
-  display: inline-flex
-  font-size: calc(50 / 16 * 1rem)
-  border-radius: 50%
+    display: inline-flex
+    font-size: calc(50 / 16 * 1rem)
+    border-radius: 50%
 
 .social-media-icon-box:hover
-  background-color: $dark-orange
-  opacity: 90%
-
-.page-view
-  .project
-    padding: $project-padding-x-y
-
-.about-me-pic
-  height: $about-me-pic-x-y
-  width: $about-me-pic-x-y
-
-.about-pic-wrap
-  justify-content: center
-
-.about-text
-  padding-bottom: 1rem
+    background-color: $dark-orange
+    opacity: 90%
 
 .active-link
-  color: $dark-orange !important
-  background: $darker-blue
-  border-radius: 1rem
-
-.proj-img
-  height: 9rem
-  width: 16rem
-  margin-bottom: 2rem
+    color: $dark-orange !important
+    background: $darker-blue
+    border-radius: 1rem
 
 img
-  width: 100%
-  height: 100%
-  object-fit: contain
-  overflow: hidden
-
-.cv-skills-list
-  display: flex
-  justify-content: center
-  gap: 1rem 2rem
-  flex-wrap: wrap
-
-.cv
-  padding: 1rem
-  ul
-    list-style-type: none
-    padding: 0rem
-    li
-      margin: 1rem
-  .cv-personal-info
-    ul
-      list-style: none
-  .cv-skills-list
-    display: flex
-    justify-content: center
-    padding: 0 1rem
-    li
-      margin: .33rem
-      img
-        width: auto
-        height: 3rem
-
-.work-exp-header
-  background-color: $yellow !important
-  h4,
-  h5
-    color: $darker-blue
-
-.card-body
-  background-color: $darker-blue
+    width: 100%
+    height: 100%
+    object-fit: contain
+    overflow: hidden
 
 .copyright
-  color: $darker-blue
-
-.form-backdrop
-  background-color: #ededed
-
-.feedback-form
-  text-align: left
-  input,
-  textarea
-    border-radius: 10px
-  .form-title
-    text-align: center
-
-.feedback-form input
-  height: 2rem
-
-.feedback-form textarea
-  height: 6rem
-  resize: none
-
-.home-pic
-  border-radius: 50%
-  border: 3px solid $yellow
+    color: $darker-blue
 
 @media screen and ( min-width: $bootstrap-breakpoint-md )
-  .page-view
-    padding: 3rem 16%
-  .about-text
-    padding: 0 16%
-  .cv
-    .cv-personal-info
-      ul
-        list-style: square
+    .page-view
+        padding: 3rem 16%
 
 @media screen and ( min-width: $bootstrap-breakpoint-sm )
-  .copyright
-    text-align: left
+    .copyright
+        text-align: left
 
 @media screen and ( min-width: $bootstrap-breakpoint-lg )
-  .project
-    text-align: left
-  .invert
-    flex-direction: row-reverse
-  .cv
-    text-align: left
-    .cv-skills-list
-      justify-content: left
-  .about-pic-wrap
-    justify-content: left
-  .active-link
-    background: none
-  .about-text
-    text-align: left
-
-@media screen and ( min-width: $bootstrap-breakpoint-xl ) and ( min-height: $bootstrap-breakpoint-md )
-  .home-content
-    margin: 0
-    position: absolute
-    top: 50%
-    left: 50%
-    -ms-transform: translate(-50%, -50%)
-    transform: translate(-50%, -50%)
+    .active-link
+        background: none

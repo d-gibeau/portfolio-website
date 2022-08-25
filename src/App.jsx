@@ -7,7 +7,7 @@ import Feedback from "./components/pages/Feedback";
 import CurriculumVitae from "./components/pages/CurriculumVitae";
 import Projects from "./components/pages/Projects";
 import { createTheme, MuiThemeProvider } from "@material-ui/core";
-import "./style/css/global.css";
+import "./style/css/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const theme = createTheme({
