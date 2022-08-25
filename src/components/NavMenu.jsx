@@ -46,11 +46,11 @@ const NavMenu = () => {
           </Nav.Link>
           <Nav.Link
             as={NavLink}
-            to="/feedback"
+            to="/contact"
             className="header-link"
             activeClassName="active-link"
           >
-            Feedback
+            Contact
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

@@ -1,8 +1,19 @@
+import pictureOfDaniel from "../../img/smiling-danny.jpg";
+
 const Home = () => {
   return (
     <div className="page-view">
-      <div className="home-content p-3 text-center">
-        <h1 className="">Welcome to my website!</h1>
+      <div className="home-content p-3 text-center container">
+        <div className="d-flex justify-content-center">
+          <div className="row col-4">
+            <img
+              src={pictureOfDaniel}
+              alt="Picture of Daniel Gibeau"
+              className="img-fluid home-pic"
+            />
+          </div>
+        </div>
+        <h1 className="mt-4">Hi, I'm Daniel Gibeau!</h1>
         <p>I'm a software developer currently based in Edmonton, Alberta.</p>
         <p>
           After nearly a decade of working in the food industry as a line cook,

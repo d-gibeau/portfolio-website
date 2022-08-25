@@ -39,7 +39,7 @@ function App() {
           <Route path="/projects" component={Projects} />
           <Route path="/cv" component={CurriculumVitae} />
           <Route path="/about" component={About} />
-          <Route path="/feedback" component={Feedback} />
+          <Route path="/contact" component={Feedback} />
         </div>
         <Footer />
       </Router>

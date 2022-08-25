@@ -202,6 +202,11 @@ img {
   resize: none;
 }
 
+.home-pic {
+  border-radius: 50%;
+  border: 3px solid #e9c46a;
+}
+
 @media screen and (min-width: 740px) {
   .page-view {
     padding: 3rem 16%;
