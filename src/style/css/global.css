@@ -178,6 +178,10 @@ img {
   color: #1d353f;
 }
 
+.form-backdrop {
+  background-color: #ededed;
+}
+
 .feedback-form {
   text-align: left;
 }
@@ -185,8 +189,7 @@ img {
 .feedback-form textarea {
   border-radius: 10px;
 }
-.feedback-form .form-title,
-.feedback-form .submit-button {
+.feedback-form .form-title {
   text-align: center;
 }
 

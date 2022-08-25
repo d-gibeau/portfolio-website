@@ -44,12 +44,12 @@ const FeedbackForm = (props) => {
 
   return (
     <div className="d-flex justify-content-center">
-      <div className="col-md-8 col-lg-6">
+      <div className="col-md-8 col-lg-6 rounded form-backdrop px-lg-5 py-lg-3 mx-3 my-3">
         <form
           className="d-flex flex-column pt-3 feedback-form"
           onSubmit={onSubmitAction}
         >
-          <h2 className="form-title mb-3">Contact Form</h2>
+          <h2 className="form-title mb-4">Contact Form</h2>
           <div className="form-row">
             <div className="form-group col-md-6">
               <label for="firstName">First Name</label>
@@ -108,8 +108,11 @@ const FeedbackForm = (props) => {
               }}
             />
           </div>
-          <div className="form-group submit-button">
-            <button type="submit" className="btn btn-primary">
+          <div className="form-group submit-button mt-3">
+            <button
+              type="submit"
+              className="btn btn-primary col-lg-6 col-md-12"
+            >
               Submit
             </button>
           </div>
