@@ -6,7 +6,7 @@ import Home from "./components/pages/Home";
 import Feedback from "./components/pages/Feedback";
 import CurriculumVitae from "./components/pages/CurriculumVitae";
 import Projects from "./components/pages/Projects";
-import { createTheme, MuiThemeProvider } from "@material-ui/core";
+import { createTheme, MuiThemeProvider } from "@material-ui/core/styles";
 import "./style/css/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
