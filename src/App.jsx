@@ -6,32 +6,14 @@ import Home from "./components/pages/Home";
 import Feedback from "./components/pages/Feedback";
 import CurriculumVitae from "./components/pages/CurriculumVitae";
 import Projects from "./components/pages/Projects";
-// import { createTheme, MuiThemeProvider } from "@material-ui/core/styles";
 import "./style/css/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-// const theme = createTheme({
-//   palette: {
-//     primary: {
-//       main: "#264653",
-//       dark: "#1d353f",
-//     },
-//     secondary: {
-//       main: "#b0bec5",
-//       light: "#e2f1f8",
-//       dark: "#808e95",
-//     },
-//   },
-//   socialIcon: {
-//     "&:hover": {
-//       backgroundColor: "#e2f1f8 !important",
-//     },
-//   },
-// });
+import usePageTracking from "./usePageTracking";
 
 function App() {
+  usePageTracking();
+
   return (
-    // <MuiThemeProvider theme={theme}>
     <Router>
       <div className="wrapper">
         <NavMenu />
@@ -43,7 +25,6 @@ function App() {
       </div>
       <Footer />
     </Router>
-    // </MuiThemeProvider>
   );
 }
 
