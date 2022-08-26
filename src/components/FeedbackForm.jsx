@@ -11,32 +11,32 @@ const FeedbackForm = (props) => {
     event.preventDefault();
     const form = event.target;
 
-    const formData = {
-      firstName: form.firstName.value,
-      lastName: form.lastName.value,
-      email: form.email.value,
-      message: form.message.value,
-    };
+    // const formData = {
+    //   firstName: form.firstName.value,
+    //   lastName: form.lastName.value,
+    //   email: form.email.value,
+    //   message: form.message.value,
+    // };
 
-    // Send JSON of submitted form data to API endpoint
-    const requestOptions = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData), // body data type must match "Content-Type" header
-    };
+    // // Send JSON of submitted form data to API endpoint
+    // const requestOptions = {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(formData), // body data type must match "Content-Type" header
+    // };
 
-    await fetch(API_URL, requestOptions)
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        console.log("Success:", data);
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
+    // await fetch(API_URL, requestOptions)
+    //   .then((response) => {
+    //     return response.json();
+    //   })
+    //   .then((data) => {
+    //     console.log("Success:", data);
+    //   })
+    //   .catch((error) => {
+    //     console.error("Error:", error);
+    //   });
 
     // flip switch for displaying success screen
     props.unmount();
