@@ -88,6 +88,10 @@ footer {
   border-radius: 50%;
 }
 
+.social-media-icon {
+  color: #264653;
+}
+
 .social-media-icon-box:hover {
   background-color: #e76f51;
   opacity: 90%;
