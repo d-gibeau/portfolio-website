@@ -7,11 +7,13 @@ const Feedback = () => {
 
   return (
     <div className="page-view">
-      {renderForm ? (
-        <FeedbackForm unmount={setRenderForm} />
-      ) : (
-        <FeedbackSubmitted />
-      )}
+      <div className="container">
+        {renderForm ? (
+          <FeedbackForm unmount={setRenderForm} />
+        ) : (
+          <FeedbackSubmitted />
+        )}
+      </div>
     </div>
   );
 };

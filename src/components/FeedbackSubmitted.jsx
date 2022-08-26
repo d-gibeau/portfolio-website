@@ -1,5 +1,9 @@
 const FeedbackSubmitted = () => {
-  return <p>Message sent!</p>;
+  return (
+    <div className="d-flex justify-content-center">
+      <h3 className="p-3">Message sent!</h3>
+    </div>
+  );
 };
 
 export default FeedbackSubmitted;
