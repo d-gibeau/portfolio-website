@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const FeedbackForm = (props) => {
-  const API_URL = "https://localhost:7282/api/feedback";
+  // const API_URL = "https://localhost:7282/api/feedback";
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -9,7 +9,7 @@ const FeedbackForm = (props) => {
 
   const onSubmitAction = async (event) => {
     event.preventDefault();
-    const form = event.target;
+    // const form = event.target;
 
     // const formData = {
     //   firstName: form.firstName.value,

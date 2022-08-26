@@ -3,9 +3,9 @@ import pictureOfDaniel from "../../img/smiling-danny.jpg";
 const Home = () => {
   return (
     <div className="page-view">
-      <div className="home-content p-3 text-center container">
+      <div className="home-content p-4 text-center container">
         <div className="d-flex justify-content-center col-12">
-          <div className="row col-lg-4 home-pic-wrapper">
+          <div className="row col-lg-4 col-md-8 home-pic-wrapper">
             <img
               src={pictureOfDaniel}
               alt="Daniel Gibeau"
