@@ -8,11 +8,8 @@ import CurriculumVitae from "./components/pages/CurriculumVitae";
 import Projects from "./components/pages/Projects";
 import "./style/css/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import usePageTracking from "./usePageTracking";
 
 function App() {
-  usePageTracking();
-
   return (
     <Router>
       <div className="wrapper">
