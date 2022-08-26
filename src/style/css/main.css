@@ -31,7 +31,8 @@ h5 {
 .navbar-nav {
   align-items: center;
 }
-.navbar-nav .nav-link {
+
+.nav-link {
   width: 75%;
   text-align: center;
   padding-left: 2rem;
@@ -87,15 +88,48 @@ footer {
   border-radius: 50%;
 }
 
+.social-media-icon {
+  color: #264653;
+}
+
 .social-media-icon-box:hover {
   background-color: #e76f51;
   opacity: 90%;
 }
 
-.page-view .project {
-  padding: 2rem;
+.active-link {
+  color: #e76f51 !important;
+  background: #1d353f;
+  border-radius: 1rem;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+}
+
+.copyright {
+  color: #1d353f;
+}
+
+@media screen and (min-width: 740px) {
+  .page-view {
+    padding: 3rem 16%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .copyright {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 992px) {
+  .active-link {
+    background: none;
+  }
+}
 .about-me-pic {
   height: 15rem;
   width: 15rem;
@@ -109,25 +143,19 @@ footer {
   padding-bottom: 1rem;
 }
 
-.active-link {
-  color: #e76f51 !important;
-  background: #1d353f;
-  border-radius: 1rem;
+@media screen and (min-width: 740px) {
+  .about-text {
+    padding: 0 16%;
+  }
 }
-
-.proj-img {
-  height: 9rem;
-  width: 16rem;
-  margin-bottom: 2rem;
+@media screen and (min-width: 992px) {
+  .about-pic-wrap {
+    justify-content: left;
+  }
+  .about-text {
+    text-align: left;
+  }
 }
-
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  overflow: hidden;
-}
-
 .cv-skills-list {
   display: flex;
   justify-content: center;
@@ -138,61 +166,109 @@ img {
 .cv {
   padding: 1rem;
 }
-.cv ul {
+
+ul {
   list-style-type: none;
   padding: 0rem;
 }
-.cv ul li {
+ul li {
   margin: 1rem;
 }
-.cv .cv-personal-info ul {
+
+.cv-personal-info ul {
   list-style: none;
 }
-.cv .cv-skills-list {
+
+.cv-skills-list {
   display: flex;
   justify-content: center;
   padding: 0 1rem;
 }
-.cv .cv-skills-list li {
+.cv-skills-list li {
   margin: 0.33rem;
 }
-.cv .cv-skills-list li img {
+.cv-skills-list img {
   width: auto;
   height: 3rem;
+}
+.cv-skills-list h4,
+.cv-skills-list h5 {
+  color: #1d353f;
 }
 
 .work-exp-header {
   background-color: #e9c46a !important;
-}
-.work-exp-header h4,
-.work-exp-header h5 {
-  color: #1d353f;
 }
 
 .card-body {
   background-color: #1d353f;
 }
 
-.copyright {
-  color: #1d353f;
-}
-
 @media screen and (min-width: 740px) {
-  .page-view {
-    padding: 3rem 16%;
-  }
-  .about-text {
-    padding: 0 16%;
-  }
   .cv .cv-personal-info ul {
     list-style: square;
   }
 }
-@media screen and (min-width: 576px) {
-  .copyright {
+@media screen and (min-width: 992px) {
+  .cv {
     text-align: left;
   }
+  .cv .cv-skills-list {
+    justify-content: left;
+  }
 }
+.form-backdrop {
+  background-color: #ededed;
+}
+
+.feedback-form {
+  text-align: left;
+}
+.feedback-form input,
+.feedback-form textarea {
+  border-radius: 10px;
+}
+.feedback-form .form-title {
+  text-align: center;
+}
+
+.feedback-form input {
+  height: 2rem;
+}
+
+.feedback-form textarea {
+  height: 6rem;
+  resize: none;
+}
+
+.home-pic {
+  border-radius: 50%;
+  border: 3px solid #e9c46a;
+}
+
+.home-pic-wrapper {
+  max-width: 80%;
+}
+
+@media screen and (min-width: 1200px) and (min-height: 740px) {
+  .home-content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.page-view .project {
+  padding: 2rem;
+}
+
+.proj-img {
+  height: 9rem;
+  width: 16rem;
+  margin-bottom: 2rem;
+}
+
 @media screen and (min-width: 992px) {
   .project {
     text-align: left;
@@ -200,31 +276,4 @@ img {
   .invert {
     flex-direction: row-reverse;
   }
-  .cv {
-    text-align: left;
-  }
-  .cv .cv-skills-list {
-    justify-content: left;
-  }
-  .about-pic-wrap {
-    justify-content: left;
-  }
-  .active-link {
-    background: none;
-  }
-  .about-text {
-    text-align: left;
-  }
-}
-@media screen and (min-width: 1200px) and (min-height: 740px) {
-  .home-content {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-}
-
-/*# sourceMappingURL=global.css.map */
+}/*# sourceMappingURL=main.css.map */

@@ -1,8 +1,7 @@
-import { Grid, useTheme } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import { GitHub, LinkedIn } from "@material-ui/icons";
 
 const Footer = () => {
-  const theme = useTheme();
   const date = new Date();
 
   return (
@@ -15,11 +14,7 @@ const Footer = () => {
             rel="noreferrer"
             className="social-media-icon-box"
           >
-            <LinkedIn
-              htmlColor={theme.palette.primary.dark}
-              fontSize="inherit"
-              className="p-2"
-            />
+            <LinkedIn fontSize="inherit" className="p-2 social-media-icon" />
           </a>
           <a
             href="https://github.com/d-gibeau"
@@ -27,11 +22,7 @@ const Footer = () => {
             rel="noreferrer"
             className="social-media-icon-box ml-2"
           >
-            <GitHub
-              htmlColor={theme.palette.primary.dark}
-              fontSize="inherit"
-              className="p-2"
-            />
+            <GitHub fontSize="inherit" className="p-2 social-media-icon" />
           </a>
         </Grid>
         <Grid item xs={12} sm={6} className="copyright" align="center">

@@ -3,7 +3,7 @@ import aboutPic from "../../img/fidel-selfie-min.JPG";
 const About = () => {
   return (
     <div className="page-view">
-      <div className="about-me">
+      <div className="container">
         <div className="row px-3">
           <div className="col-lg-3 col-md-12 col-sm-12 d-flex about-pic-wrap align-items-middle">
             <img

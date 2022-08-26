@@ -1,4 +1,4 @@
-import WorkExperience from "../WorkExperience.js";
+import WorkExperience from "../WorkExperience";
 import WORK_EXP_JSON from "../../data/cv/work-exp.json";
 import SKILLS_JSON from "../../data/cv/skills.json";
 import { useEffect } from "react";

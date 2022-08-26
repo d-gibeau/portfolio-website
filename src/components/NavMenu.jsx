@@ -44,6 +44,14 @@ const NavMenu = () => {
           >
             About
           </Nav.Link>
+          <Nav.Link
+            as={NavLink}
+            to="/contact"
+            className="header-link"
+            activeClassName="active-link"
+          >
+            Contact
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
